@@ -9,7 +9,7 @@ public class Car {
     //constructor
     /**
      * Constructor
-     * @param maxCapacity
+     * @param maxCapacity maximum capacity of passengers in a car
      */
     public Car(int maxCapacity){
 
@@ -37,7 +37,7 @@ public class Car {
 
     /**
      * Adds a passenger p to the car if there are seats remaining
-     * @param p
+     * @param p passenger to be added
      * @return T/F if the passenger was added
      */
     public boolean addPassenger(Passenger p){
@@ -57,7 +57,7 @@ public class Car {
 
     /**
      * Removes a passenger from the car if they are on the car
-     * @param p
+     * @param p passenger to be removed
      * @return T/F if the passenger was removed
      */
     public boolean removePassenger(Passenger p){

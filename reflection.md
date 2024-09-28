@@ -1,7 +1,7 @@
 Use this file to record your reflection on this assignment.
 
 - What are your initial impressions of how `Encapsulation` affects your programming?
-    It is nice to be able to categorize and seperate functions of my code into different classes. It is a lot easier to visualize how different parts of the code work together through encapsulation. 
+    It is nice to be able to categorize and seperate functions of my code into different classes. It is a lot easier to visualize how different parts of the code work together through encapsulation. It also makes the code easier to organize.
 
 - What worked, what didn't, what advice would you give someone taking this course in the future?
 

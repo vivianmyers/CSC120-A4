@@ -11,10 +11,10 @@ public class Train {
     //constructor
     /**
      * Constructor
-     * @param fuelType
-     * @param fuelCapacity
-     * @param nCars
-     * @param passengerCapacity
+     * @param fuelType type of fuel
+     * @param fuelCapacity max fuel
+     * @param nCars max number of cars in a train
+     * @param passengerCapacity max passenger number in a car
      */
     public Train(FuelType fuelType, double fuelCapacity, 
     int nCars, int passengerCapacity){
@@ -35,7 +35,7 @@ public class Train {
     }
     /**
      * Returns car
-     * @param i
+     * @param i index of car to get
      * @return car
      */
     public Car getCar(int i){

@@ -3,7 +3,7 @@ public class Passenger {
     private String name;
     /**
      * constructor
-     * @param name
+     * @param name name of passenger
      */
     public Passenger(String name) {
         this.name = name;
@@ -20,7 +20,7 @@ public class Passenger {
     //methods
     /**
      * Adds passenger to a car
-     * @param c
+     * @param c car to get onto
      */
     public void boardCar(Car c){
         if(!c.addPassenger(this)){
@@ -33,7 +33,7 @@ public class Passenger {
 
     /**
      * Removes passenger from a car
-     * @param c
+     * @param c car to get off of
      */
     public void getOffCar(Car c){
         if(!c.removePassenger(this)){
@@ -42,7 +42,9 @@ public class Passenger {
             System.out.println("Passenger removed.");
         }
     }
-
+    /**
+     * toString tells program how to print
+     */
     public String toString(){
         return this.name;
     }

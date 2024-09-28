@@ -9,8 +9,8 @@ public class Engine {
 
     /**
      * Constructor
-     * @param f
-     * @param fuel
+     * @param f fuel type
+     * @param fuel double fuel amount
      */
     public Engine(FuelType f, double fuel){
         this.fuelType = f;
