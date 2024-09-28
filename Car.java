@@ -36,7 +36,7 @@ public class Car {
     }
 
     /**
-     * Adds a passenger p to the car. 
+     * Adds a passenger p to the car if there are seats remaining
      * @param p
      * @return T/F if the passenger was added
      */
@@ -56,7 +56,7 @@ public class Car {
     }
 
     /**
-     * Removes a passenger from the car
+     * Removes a passenger from the car if they are on the car
      * @param p
      * @return T/F if the passenger was removed
      */
