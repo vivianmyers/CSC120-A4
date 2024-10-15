@@ -5,7 +5,8 @@ public class Engine {
 
     //attributes
     private FuelType fuelType;
-    private double currentFuel, maxFuel;
+    private double currentFuel;
+    private double maxFuel;
 
     /**
      * Constructor
@@ -54,7 +55,7 @@ public class Engine {
      * @return T/F if fuel is greater than 0
      */
     public boolean go(){
-        currentFuel -= 5; //decrease fuel
+        currentFuel -= 1; //decrease fuel
         System.out.println("Remaining Fuel: " + this.currentFuel);
         return (this.currentFuel > 0);
     }

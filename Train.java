@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Train {
 
     //attributes
-    private Engine engine;
+    private final Engine ENGINE;
     private ArrayList<Car> cars;
 
     //constructor
@@ -18,7 +18,7 @@ public class Train {
      */
     public Train(FuelType fuelType, double fuelCapacity, 
     int nCars, int passengerCapacity){
-        this.engine = new Engine(fuelType, fuelCapacity);
+        this.ENGINE = new Engine(fuelType, fuelCapacity);
         this.cars = new ArrayList<>(nCars);
         for (int i = 0; i < nCars; i++) {
             this.cars.add(new Car(passengerCapacity));
@@ -31,7 +31,7 @@ public class Train {
      * @return engine
      */
     public Engine getEngine(){
-        return engine;
+        return ENGINE;
     }
     /**
      * Returns car

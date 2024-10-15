@@ -23,10 +23,19 @@ public class Passenger {
      * @param c car to get onto
      */
     public void boardCar(Car c){
-        if(!c.addPassenger(this)){
-            System.out.println("Car Full");
-        }else{
-            System.out.println("Passenger boarded.");
+
+        try {
+            // Attempt to add the passenger to the car
+            if (c.addPassenger(this)) {
+                System.out.println(name + " successfully boarded the car.");
+                
+            } else {
+                throw new Exception("Failed to board the car: Car is full.");
+            }
+        } catch (Exception e) {
+            // Catch any exceptions and print the error message
+            System.out.println(e.getMessage());
+            
         }
         
     }
@@ -36,14 +45,26 @@ public class Passenger {
      * @param c car to get off of
      */
     public void getOffCar(Car c){
-        if(!c.removePassenger(this)){
-            System.out.println("Passenger not on board.");
-        }else{
-            System.out.println("Passenger removed.");
+
+        try {
+            // Attempt to remove the passenger from the car
+            if (c.removePassenger(this)) {
+                System.out.println(name + " successfully got off the car.");
+                
+            } else {
+                throw new Exception("Failed to get off the car: Passenger is not on the car.");
+            }
+        } catch (Exception e) {
+            // Catch any exceptions and print the error message
+            System.err.println(e.getMessage());
+            
         }
+        
+        
     }
     /**
      * toString tells program how to print
+     * @return name of passenger
      */
     public String toString(){
         return this.name;
